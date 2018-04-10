@@ -1,5 +1,5 @@
 body {
-	background: #002B36;
+	background: #292929;
 	padding: 20px 50px;
 	margin: 0px;
 }
@@ -38,15 +38,17 @@ textarea {
 #box {
 	padding: 0px;
 	margin: 0px;
-	width: 100%;
+	width: auto;
 	border: 0px;
 	outline: none;
 	font-size: 13px;
 	padding-right: 360px;
-  overflow: inherit;
+    overflow: inherit;
+	word-wrap: normal;
 }
 
 #box code {
+	word-wrap: normal;
 	padding: 0px;
 	background: transparent !important; /* don't hide hastebox */
 }
@@ -55,8 +57,8 @@ textarea {
 
 #key {
 	position: fixed;
-	top: 0px;
-	right: 0px;
+	bottom: 15px;
+	right: 15px;
 	z-index: +1000; /* watch out */
 }
 
@@ -67,9 +69,10 @@ textarea {
 }
 
 #box2 {
-	background: #08323c;
+	background: #444;
 	font-size: 0px;
 	padding: 0px 5px;
+	border-radius: 5px;
 }
 
 #box1 a.logo, #box1 a.logo:visited {
@@ -146,9 +149,6 @@ textarea {
 #box2 .function.enabled.raw { background-position: -116px center; }
 #box2 .function.enabled.raw:hover { background-position: -116px bottom; }
 
-#box2 .function.twitter { background-position: -153px top; }
-#box2 .function.enabled.twitter { background-position: -153px center; }
-#box2 .function.enabled.twitter:hover { background-position: -153px bottom; }
 #box2 .button-picture{ border-width: 0; font-size: inherit; }
 
 #messages {
